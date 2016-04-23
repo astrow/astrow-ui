@@ -106,8 +106,9 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   popd
 )
 
-echo Transpiling TypeScript...
+
 :: 4. Compile TypeScript
+echo Transpiling TypeScript...
 call :ExecuteCmd tsc
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
