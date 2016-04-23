@@ -105,7 +105,8 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
-::
+
+echo Transpiling TypeScript...
 :: 4. Compile TypeScript
 call :ExecuteCmd tsc
 
