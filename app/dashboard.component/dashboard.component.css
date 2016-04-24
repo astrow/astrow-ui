@@ -5,3 +5,13 @@
     box-sizing: border-box;
     border:1px dashed green;
 }
+/* Dashboard */
+.dashboard {
+    flex:1;
+    border:1px gray;
+}
+
+stroke-graph {
+    height:40px;
+}
+

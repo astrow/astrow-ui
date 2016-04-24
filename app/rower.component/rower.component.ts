@@ -5,7 +5,6 @@ import { SessionService } from '../session.service/session.service';
 @Component({
     selector: 'rower',
     templateUrl: 'app/rower.component/rower.component.html',
-    directives: [StrokeGraphComponent],
     styleUrls: ['app/rower.component/rower.component.css']
 })
 export class RowerComponent {

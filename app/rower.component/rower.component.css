@@ -37,16 +37,6 @@
     height:100%;
 }
 
-/* Dashboard */
-.dashboard {
-    flex:1;
-    border:1px gray;
-}
-
-stroke-graph {
-    height:40px;
-}
-
 /* Course */
 .course {
     /*flex:3;*/

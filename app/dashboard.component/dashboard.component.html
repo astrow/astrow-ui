@@ -4,3 +4,10 @@
 <button (click)="sessionService.simulateStroke('Buzz Aldrin')" style="cursor:pointer;font-size:12pt;">
     Simulate stroke
 </button>
+    <div class="dashboard">
+        <div>
+            <stroke-graph [strokeRates]="rower.strokeRates"></stroke-graph>
+                <div [style.flex]="rower.distance"></div>
+            <div [style.flex]="rower.distance"></div>
+        </div>
+    </div>

@@ -5,13 +5,6 @@
     <div class="remove"><img src="/app/rower.component/assets/remove.png" alt="Remove rower"></div>
 </div>
 <div class="body">
-    <div class="dashboard">
-        <div>
-            <stroke-graph [strokeRates]="rower.strokeRates"></stroke-graph>
-                <div [style.flex]="rower.distance"></div>
-            <div [style.flex]="rower.distance"></div>
-        </div>
-    </div>
     <div class="course">
         <div [style.flex]="sessionService.distance - rower.distance"></div>
         <div class="icon"><img src="/app/rower.component/assets/rowboat.png"/></div>
