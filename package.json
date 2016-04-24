@@ -1,7 +1,7 @@
 {
   "name": "astrow-ui",
   "version": "0.1.0",
-  "author": "Jeremy Foster <jeremy.foster@live.com> (http://codefoster.com)",
+  "author": "Astrow",
   "description": "Client website for the Astrow project",
   "scripts": {
     "tsc": "tsc",
