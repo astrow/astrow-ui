@@ -1,4 +1,4 @@
-import { Component, provide } from "angular2/core";
+import { Component, Input } from "angular2/core";
 import { StrokeGraphComponent } from '../stroke-graph.component/stroke-graph.component';
 import { SessionService } from "../session.service/session.service"
 
@@ -10,6 +10,7 @@ import { SessionService } from "../session.service/session.service"
 })
 export class DashboardComponent {
 
+    @Input() public rower: any;
 
     constructor(private sessionService: SessionService) {
         
