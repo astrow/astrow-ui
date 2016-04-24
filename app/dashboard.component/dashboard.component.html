@@ -1,9 +1,6 @@
 <button (click)="sessionService.inSession ? sessionService.stop() : sessionService.start()">
     {{ sessionService.inSession ? "Stop" : "Start" }}
 </button>
-<button (click)="sessionService.simulateStroke('Rower 1')" style="cursor:pointer;font-size:12pt;">
-    Simulate stroke for "Rower 1"
-</button>
-<button (click)="sessionService.simulateStroke('Rower 2')" style="cursor:pointer;font-size:12pt;">
-    Simulate stroke for "Rower 2"
+<button (click)="sessionService.simulateStroke('Buzz Aldrin')" style="cursor:pointer;font-size:12pt;">
+    Simulate stroke
 </button>
