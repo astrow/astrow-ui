@@ -52,6 +52,7 @@ stroke-graph {
     /*flex:3;*/
     width: 100%;
     background-color: #1A5DAD;
+    background: url('gmap.png');
     border:1px gray;
     display:flex;
     flex-direction: column;
