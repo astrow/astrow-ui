@@ -1,5 +1,5 @@
 import { Component, provide } from "angular2/core";
-import { RaceService } from "../race.service/race.service"
+import { SessionService } from "../session.service/session.service"
 
 @Component({
     selector: "race-controls",
@@ -9,7 +9,7 @@ import { RaceService } from "../race.service/race.service"
 export class RaceControlsComponent {
 
 
-    constructor(private raceService: RaceService) {
+    constructor(private sessionService: SessionService) {
         
     }
 

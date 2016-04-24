@@ -1,6 +1,6 @@
 import { Component, Input } from 'angular2/core';
 import { StrokeGraphComponent } from '../stroke-graph.component/stroke-graph.component';
-import { RaceService } from '../race.service/race.service';
+import { SessionService } from '../session.service/session.service';
 
 @Component({
     selector: 'rower',
@@ -11,6 +11,6 @@ import { RaceService } from '../race.service/race.service';
 export class RowerComponent {
     @Input() public rower: any;
     
-    constructor(private raceService: RaceService) {
+    constructor(private sessionService: SessionService) {
     }
 }

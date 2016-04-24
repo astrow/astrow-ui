@@ -1,5 +1,5 @@
 import { Component, provide } from "angular2/core";
-import { RaceService } from "../race.service/race.service"
+import { SessionService } from "../session.service/session.service"
 import { RowerComponent } from "../rower.component/rower.component";
 
 @Component({
@@ -11,7 +11,7 @@ import { RowerComponent } from "../rower.component/rower.component";
 export class RowerListComponent {
     private socket;
 
-    constructor(private raceService: RaceService) {
+    constructor(private sessionService: SessionService) {
     }
 
 }

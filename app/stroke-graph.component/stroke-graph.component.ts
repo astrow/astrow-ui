@@ -1,5 +1,5 @@
 import { Component, Input } from 'angular2/core';
-import { RaceService } from '../race.service/race.service';
+import { SessionService } from '../session.service/session.service';
 
 @Component({
     selector: 'stroke-graph',
@@ -9,7 +9,7 @@ import { RaceService } from '../race.service/race.service';
 export class StrokeGraphComponent {
     @Input() public strokeRates: number[];
 
-    constructor(private raceService: RaceService) {
+    constructor(private sessionService: SessionService) {
     }
 
     displayHeight(value: number): string {
