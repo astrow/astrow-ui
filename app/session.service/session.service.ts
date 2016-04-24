@@ -21,6 +21,19 @@ export class SessionService {
         this.socket = io("http://localhost:8080");
         // this.socket = io("http://server.astrow.site");
 
+        // TODO: Hardcoding Buzz Aldrin for now
+        // add user if not exist
+        let dataname = "Buzz Aldrin";
+        if (!this.rowers.some(r => r.name == dataname)) {
+            console.log(`addingme ${dataname}`);
+            this.rowers.push({
+                name: dataname,
+                strokeRates: [],
+                caloriesPerMinute: 0,
+                distance: 0
+            });
+        }
+
         //handle a stroke message
         this.socket.on("stroke", (data) => {
             //TODO: update our app state with the new message
@@ -28,15 +41,15 @@ export class SessionService {
             console.log(`stroke received from ${data.name}`);
 
             // add user if not exist
-            if (!this.rowers.some(r => r.name == data.name)) {
-                console.log(`adding ${data.name}`);
-                this.rowers.push({
-                    name: data.name,
-                    strokeRates: [],
-                    caloriesPerMinute: 0,
-                    distance: 0
-                });
-            }
+            //if (!this.rowers.some(r => r.name == data.name)) {
+            //    console.log(`adding ${data.name}`);
+            //    this.rowers.push({
+            //        name: data.name,
+            //        strokeRates: [],
+            //        caloriesPerMinute: 0,
+            //        distance: 0
+            //    });
+            // }
 
             if (this.inSession) {
                 let r = this.rowers.filter(r => r.name == data.name)[0];

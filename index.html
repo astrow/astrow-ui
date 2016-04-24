@@ -8,8 +8,8 @@
     <!-- IE required polyfills, in this exact order -->
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
-    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script> 
-    
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
     <!-- Angular2 stuff -->
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
@@ -37,6 +37,29 @@
 
 <body>
     <app></app>
+
+     <!-- Google Maps -->
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 47.616020, lng: -122.260991},
+          zoom: 14
+        });
+      }
+    </script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAxfX9Gto1WxltzPzawS4TQndPNl4COXA&callback=initMap"></script> -->
+    <script>
+      window.onload = function() {
+			 // Need to use some kind of event listener for this
+			 setTimeout(
+				function() {
+					var scriptTag = document.createElement("script");
+					scriptTag.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCAxfX9Gto1WxltzPzawS4TQndPNl4COXA&callback=initMap";
+					document.head.appendChild(scriptTag);
+				}, 2000);
+      };
+    </script>
 </body>
 
 </html>
