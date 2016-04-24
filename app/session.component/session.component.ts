@@ -4,13 +4,13 @@ import { RaceControlsComponent } from "../race-controls.component/race-controls.
 import { RowerListComponent } from "../rower-list.component/rower-list.component";
 
 @Component({
-    selector: "race",
-    templateUrl: "app/race.component/race.component.html",
+    selector: "session",
+    templateUrl: "app/session.component/session.component.html",
     directives: [RaceControlsComponent, RowerListComponent],
     providers: [SessionService],
-    styleUrls:["app/race.component/race.component.css"]
+    styleUrls:["app/session.component/session.component.css"]
 })
-export class RaceComponent {
+export class SessionComponent {
     private socket;
 
     constructor(private sessionService: SessionService) {

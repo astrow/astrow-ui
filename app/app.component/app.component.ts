@@ -1,10 +1,10 @@
 import { Component, provide } from "angular2/core";
-import { RaceComponent } from "../race.component/race.component";
+import { SessionComponent } from "../session.component/session.component";
 
 @Component({
     selector: "app",
     templateUrl: "app/app.component/app.component.html",
-    directives: [RaceComponent],
+    directives: [SessionComponent],
     styleUrls: ["app/app.component/app.component.css"],
 })
 export class AppComponent {}

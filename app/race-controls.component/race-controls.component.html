@@ -1,5 +1,5 @@
-<button (click)="sessionService.raceOn ? sessionService.stopRace() : sessionService.startRace()">
-    {{ sessionService.raceOn ? "Stop" : "Race" }}
+<button (click)="sessionService.inSession ? sessionService.stop() : sessionService.start()">
+    {{ sessionService.inSession ? "Stop" : "Start" }}
 </button>
 <button (click)="sessionService.simulateStroke('Rower 1')" style="cursor:pointer;font-size:12pt;">
     Simulate stroke for "Rower 1"
