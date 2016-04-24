@@ -18,8 +18,8 @@ export class SessionService {
     }
 
     constructor() {
-        this.socket = io("http://localhost:8080");
-        // this.socket = io("http://server.astrow.site");
+        // this.socket = io("http://localhost:8080");
+        this.socket = io("http://server.astrow.site");
 
         //handle a stroke message
         this.socket.on("stroke", (data) => {
