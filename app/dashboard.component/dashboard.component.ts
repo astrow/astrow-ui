@@ -1,4 +1,5 @@
 import { Component, provide } from "angular2/core";
+import { StrokeGraphComponent } from '../stroke-graph.component/stroke-graph.component';
 import { SessionService } from "../session.service/session.service"
 
 @Component({
